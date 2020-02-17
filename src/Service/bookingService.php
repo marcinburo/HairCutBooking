@@ -127,6 +127,8 @@ class bookingService implements bookingServiceInterface
      */
     private function validateData(array $data, BookingSlot $bookingSlot, \DateTime $visitTimeFormatted, \DateInterval $visitDurationFormatted) : bool
     {
+//      TODO: here instead of returning false we could/should return array with boolean isValid and message that is used when vailidation fails..
+//      TODO: even more we can gather all messages and return all of them at the end of method. That way we got complete information what was wrong with given data at once
         $visitTimeFormattedValidate = clone $visitTimeFormatted;
 
         if(!isset($data['customer']) || empty($data['customer'])){
