@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ops/Dockerfile
+    image: haircutbooking:dev
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - db
+    volumes:
+      - .:/var/www/HairCutBooking
+    environment:
+      APP_ENV: "dev"
+      DATABASE_URL: "mysql://haircutbooking:haircutbooking@db:3306/haircutbooking"
+  db:
+    image: percona:5.7.19
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: "haircutbooking"
+      MYSQL_USER: "haircutbooking"
+      MYSQL_PASSWORD: "haircutbooking"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+

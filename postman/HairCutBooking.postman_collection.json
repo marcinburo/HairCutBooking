@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "a4464c8c-17e9-4a31-99f8-8fb97d3e651f",
+		"name": "HairCutBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://haircutbooking.local/add_booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "eeee",
+						"value": "ttttt",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"customer\": \"Magdalena Kowalska\",\n\"slotId\": 1,\n\"customerPhone\": 777322555,\n\"hairDresser\": \"Fryzjerka Martyna\",\n\"visitTime\": \"2020-02-14 10:00\",\n\"visitDuration\": \"120\"\n}"
+				},
+				"url": {
+					"raw": "http://haircutbooking.local/add_booking",
+					"protocol": "http",
+					"host": [
+						"haircutbooking",
+						"local"
+					],
+					"path": [
+						"add_booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://haircutbooking.local/get_bookings/2020-02-15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://haircutbooking.local/get_bookings/2020-02-15",
+					"protocol": "http",
+					"host": [
+						"haircutbooking",
+						"local"
+					],
+					"path": [
+						"get_bookings",
+						"2020-02-15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://haircutbooking.local/get_booking/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://haircutbooking.local/get_booking/1",
+					"protocol": "http",
+					"host": [
+						"haircutbooking",
+						"local"
+					],
+					"path": [
+						"get_booking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://haircutbooking.local/get_available_booking_slots/2020-02-14",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://haircutbooking.local/get_available_booking_slots/2020-02-14",
+					"protocol": "http",
+					"host": [
+						"haircutbooking",
+						"local"
+					],
+					"path": [
+						"get_available_booking_slots",
+						"2020-02-14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://haircutbooking.local/get_booking_slots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://haircutbooking.local/get_booking_slots",
+					"protocol": "http",
+					"host": [
+						"haircutbooking",
+						"local"
+					],
+					"path": [
+						"get_booking_slots"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
