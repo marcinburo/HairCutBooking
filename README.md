@@ -22,7 +22,8 @@ Skipping some part of the work is intentional. All prepared code should be in ac
 The services, repositories, listeners, exceptions, controllers etc. were prepared to show ability to code and
 prepare right architecture. 
 
-#room for improvements:
+# Room for improvements:
+
 - use forms to process data and validate it
 - add rest of methods to cover CRUD
 - add OAuth2 or any other authentication for API
