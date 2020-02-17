@@ -6,7 +6,7 @@ All what You need is git and proper docker setup with docker-compose installed.
 
 Please clone git repository of this small app. Once You do it go to project root directory.
 From there please run `./build_project.sh` That command will do the job for You including:
-- building all required containers
+- building and run all required containers
 - configure environment (including apache etc.)
 - install all dependencies
 - create database and schema
@@ -20,7 +20,9 @@ in API calls (it is adviced to use https because of security reasons and Persona
 This app is only a demo app. It does not contain complete functionality for real world app.
 Skipping some part of the work is intentional. All prepared code should be in accordance to given task.
 The services, repositories, listeners, exceptions, controllers etc. were prepared to show ability to code and
-prepare right architecture. 
+prepare right architecture.
+
+Also in root app directory there is Postman directory.. You could find there colection of base calls to our API.
 
 # Room for improvements:
 
