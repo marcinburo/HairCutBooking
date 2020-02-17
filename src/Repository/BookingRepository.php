@@ -63,6 +63,8 @@ class BookingRepository extends ServiceEntityRepository
                 ->getQuery()
                 ->getSingleResult(\Doctrine\ORM\Query::HYDRATE_ARRAY);
         }catch(NoResultException $e){
+//          TODO: Here we should throw our own exception (api no result with message booking for given id does not exist) instead of returning empty array as this is not logically correct
+//          TODO: For above we should have event listener for out thrown exception that would render json response 
             return [];
         }
     }
