@@ -32,3 +32,5 @@ Also in root app directory there is Postman directory.. You could find there col
 - move const into ENV (it might depends on env and also might change.. in that case the code itself should not be modified)
 - add tests to improve code reliability
 - cover more scenarios when calling API
+
+Please check TODOs in the code as there are olso some notes and tips for future development.
